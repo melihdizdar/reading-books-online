@@ -1,0 +1,69 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="DefaultMaster2.master.cs" Inherits="DeafultMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="bs4/bootstrap.min.css" rel="stylesheet" />
+    <script src="bs4/jquery.min.js"></script>
+    <script src="bs4/bootstrap.min.js"></script>
+    <style>
+        .bosluk{
+            padding-top : 10px;
+            padding-bottom : 10px;
+        }
+        .bosluk2{
+            padding-top : 20px;
+            padding-bottom : 20px;
+        }
+        .topcolor{
+            background-color:#001265;
+        }
+    </style>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <div class="container-fluid bg-primary">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-md-12 text-center bosluk2 text-light">
+                        <h4>Online Kitap Okuma</h4>
+                        <h6>"Kitap okuma sitesi online hayat offline"</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="container-fluid bg-primary ">
+            <div class="container">
+                <div class="row bosluk">
+                        <div class="col-md-12 text-center text-light">
+                            <a class="btn btn-primary" href="UDefault.aspx" role="button">Anasayfa</a>
+                            <a class="btn btn-primary" href="ukategoriler.aspx" role="button">Kategoriler</a>
+                            <a class="btn btn-primary" href="Uye/Default.aspx" role="button">Profil</a>
+                            <a class="btn btn-primary" href="Uye/OturumuKapat.aspx" role="button">Çıkış</a>
+                        </div>
+                </div>
+             </div>
+         </div>
+    </div>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+    <div>
+        <div class="container-fluid bg-primary ">
+            <div class="container">
+                <div class="row bosluk">
+                        <div class="col-md-12 text-center text-light">
+                            <h6>Bu site Melih Dizdar tarafından kodlanmıştır. Tüm hakları saklıdır © 2019</h6>
+                        </div>
+                </div>
+             </div>
+         </div>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="YonetMaster.master.cs" Inherits="Yonet_YonetMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="../bs4/bootstrap.min.css" rel="stylesheet" />
+    <script src="../bs4/jquery.min.js"></script>
+    <script src="../bs4/bootstrap.min.js"></script>
+    <style>
+        .bosluk{
+            padding-top : 10px;
+            padding-bottom : 10px;
+        }
+        .bosluk2{
+            padding-top : 20px;
+            padding-bottom : 20px;
+        }
+        .topcolor{
+            background-color:#001265;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="container-fluid bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-light">
+                    <h3>Online Kitap Okuma</h3>
+                    <h5>----> Yönetim Paneli <----</h5>
+                </div>
+                <div class="col-md-8 align-self-center">
+                    <div class="btn-group">
+                        <a class="btn btn-light" href="Default.aspx">Admin Panel</a>
+                        <a class="btn btn-light" href="UyeListesi.aspx">Kullanıcı Paneli</a>
+                        <a class="btn btn-light" href="KitapBilgileri.aspx">Kitap Bilgileri</a>
+                        <a class="btn btn-light" href="OturumuKapat.aspx">Oturumu Kapat</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+    <div>
+        <div class="container-fluid bg-primary ">
+            <div class="container">
+                <div class="row bosluk">
+                        <div class="col-md-12 text-center text-light">
+                            <h6>Bu site Melih Dizdar tarafından kodlanmıştır. Tüm hakları saklıdır © 2019</h6>
+                        </div>
+                </div>
+             </div>
+         </div>
+    </div>
+    </form>
+</body>
+</html>
